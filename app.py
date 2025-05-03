@@ -5,8 +5,8 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load model and scaler
-model = load_model("artifacts/shrinkage_model.h5")
-scaler = joblib.load("artifacts/scaler.pkl")
+model = load_model("app/artifacts/shrinkage_model.h5")
+scaler = joblib.load("app/artifacts/scaler.pkl")
 
 # Get feature names from scaler to ensure exact order
 feature_names = scaler.feature_names_in_
